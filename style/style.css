@@ -66,7 +66,7 @@ body{
 }
 
 .logo img {
-  height: 45px; /* ou 28px, ou 24px */
+  height: 48px; /* ou 28px, ou 24px */
   width: auto; /* mantém a proporção */
 }
 
@@ -115,7 +115,7 @@ span{
   transition: 0.2s ease-in-out;
 }
 
-.imagem-fundo img{
+.imagem-fundo img{  
     /*width: 100%;
     max-height: 100%;
     width: 100vw;
@@ -129,4 +129,5 @@ span{
       object-fit: cover;
       max-width: 100%;
 }
+
 
