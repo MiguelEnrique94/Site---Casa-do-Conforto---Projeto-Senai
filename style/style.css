@@ -165,6 +165,25 @@ span{
   width: 50%;
 }
 
+/*.primeiro-card{
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  gap: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.primeiro-card img{
+  width: 55%;
+  height: 50%;
+}
+
+.paragrafo-card1{
+  font-size: 1.6rem;
+}*/
+
 .cards-ofertas {
   display: flex;
   justify-content: center;
@@ -203,6 +222,31 @@ span{
   border: none;
   border-radius: 20px;
   text-align: center;
+}
+
+.segundo-card{
+  background-color: #ffffff;
+  width: 300px;
+  height: 370px;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.segundo-card button{
+  font-family: "Baskervville", serif;
+  background-color: #F2E088;
+  width: 280px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.segundo-card img{
+  width: 75%;
+  height: 55%;
+  align-items: center;
 }
 
 footer{ 
