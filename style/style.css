@@ -117,6 +117,7 @@ span{
   transition: 0.2s ease-in-out;
 }
 
+
 /* .imagem-fundo img{   
     width: 100%;
     max-height: 100%;
@@ -136,10 +137,15 @@ span{
   background-image: url("../img/image_fx.png");
   background-repeat: no-repeat;
   background-size: cover; 
+  position: relative;
   width: 100%;
   height: 900px;
   display: flex;
   max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
 }
 
 .frase-ofertas{
@@ -147,7 +153,7 @@ span{
   font-weight: bold;
   font-size: 2.5rem;
   color: black;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra leve para contraste */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
   display: flex;
   text-align: center;
   justify-content: center;
@@ -159,20 +165,46 @@ span{
   width: 50%;
 }
 
+.cards-ofertas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 250px;
+  width: 100%;
+  padding: 20px 60px;
+  margin-top: 0; 
+  flex-wrap: wrap;  
+  box-sizing: border-box;
+}
+
 .primeiro-card{
-  /*background-image: url("../img/sofá-card1.png");*/
   background-color: #ffffff;
-  height: 300px;
-  width: 500px;
-  border-radius: 10px;
-  align-items: flex-end;
+  width: 300px;
+  height: 370px;
+  border-radius: 15px;
+  padding: 50px;
 }
 
 .primeiro-card img{
-  width: 50%;
-  height: 65%;
+  width: 75%;
+  height: 55%;
+  align-items: center;
 }
 
 .paragrafo-card1{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.primeiro-card button{
+  font-family: "Baskervville", serif;
+  background-color: #F2E088;
+  width: 280px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+}
+
+footer{ 
+  text-align: center;
 }
