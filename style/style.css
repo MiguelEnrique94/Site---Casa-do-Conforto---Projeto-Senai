@@ -7,6 +7,15 @@
     /*padding: 2px; */
 }
 
+body{
+  margin: 0px;
+  margin-right: 0px;
+}
+
+html{
+  display: flex;
+}
+
 /*
 header{
     color: #ffffff;
@@ -117,22 +126,6 @@ span{
   transition: 0.2s ease-in-out;
 }
 
-
-/* .imagem-fundo img{   
-    width: 100%;
-    max-height: 100%;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    object-fit: cover;
-    opacity: 0.9;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      object-fit: cover;
-      max-width: 100%;
-} */
-
  .secao-ofertas{
   background-image: url("../img/image_fx.png");
   background-repeat: no-repeat;
@@ -202,16 +195,18 @@ span{
   height: 370px;
   border-radius: 15px;
   padding: 50px;
+  align-items: center;
 }
 
 .primeiro-card img{
   width: 75%;
   height: 55%;
-  align-items: center;
+  justify-content: center;
 }
 
 .paragrafo-card1{
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .primeiro-card button{
@@ -262,7 +257,16 @@ span{
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
   text-align: center;
   padding: 30px;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.secao-categorias h2{
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+  font-size: 2.0rem;
+  margin-top: 40px;
+  font-weight: 700;
 }
 
 .ambientes{
@@ -271,18 +275,10 @@ span{
   box-sizing: border-box;
   display: flex;
   gap: 100px;
-  padding: 20px ;
+  padding: 20px;
 }
 
-.ambientes h2{
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-
-.cards{
+.cards-ambientes{
   width: 100%;
   flex-wrap: wrap;  
   box-sizing: border-box;
@@ -300,13 +296,14 @@ span{
   border-radius: 17px;
   background-image: url("../img/card-sala.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-sala p{
   font-family: "Baskervville", serif;
   text-align: center;
   margin-top: 215px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
@@ -320,13 +317,14 @@ span{
   border-radius: 17px;
   background-image: url("../img/card-quarto.jfif");
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-quarto p{
   font-family: "Baskervville", serif;
   text-align: center;
   margin-top: 215px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
@@ -340,13 +338,14 @@ span{
   border-radius: 17px;
   background-image: url("../img/card-cozinha.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-cozinha p{
   font-family: "Baskervville", serif;
   text-align: center;
   margin-top: 215px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
@@ -360,13 +359,14 @@ span{
   border-radius: 17px;
   background-image: url("../img/card-banheiro.jfif");
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .card-banheiro p{
   font-family: "Baskervville", serif;
   text-align: center;
   margin-top: 215px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
@@ -380,17 +380,418 @@ span{
   border-radius: 17px;
   background-image: url("../img/outros-ambientes.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .outros-ambientes p{
   font-family: "Baskervville", serif;
   text-align: center;
   margin-top: 215px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #ffffff;
 }
 
-footer{ 
+.cards-moveis{
+  margin-top: 40px;
+  width: 100%;
+  flex-wrap: wrap;  
+  box-sizing: border-box;
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.moveis h2{
+  font-size: 2.0rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  font-weight: 700; 
+}
+
+.card-cadeira{
+  background-color: #ffffff;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 17px;
+  background-image: url("../img/card-cadeira.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-cadeira p{
+  font-family: "Baskervville", serif;
+  text-align: center;
+  margin-top: 215px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.card-sofa{
+  background-color: #ffffff;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 17px;
+  background-image: url("../img/card-sofa.jfif");
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-sofa p{
+  font-family: "Baskervville", serif;
+  text-align: center;
+  margin-top: 215px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.card-mesa{
+  background-color: #ffffff;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 17px;
+  background-image: url("../img/card-mesa.jfif");
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-mesa p{
+  font-family: "Baskervville", serif;
+  text-align: center;
+  margin-top: 215px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.card-armario{
+  background-color: #ffffff;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 17px;
+  background-image: url("../img/card-armario.jfif");
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-armario p{
+  font-family: "Baskervville", serif;
+  text-align: center;
+  margin-top: 215px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.diversos{
+  background-color: #ffffff;
+  width: 200px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 17px;
+  background-image: url("../img/diversos.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.diversos p{
+  font-family: "Baskervville", serif;
+  text-align: center;
+  margin-top: 215px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.secao-produtos{
+  background-color: #D9CDBF;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;  
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.secao-produtos h1{
+  font-size: 2.5rem;
+  justify-content: center; 
+  text-align: center; 
+  display: flex;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+}
+
+.cards-produtos{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  padding: 20px 60px;
+  flex-wrap: wrap;  
+  box-sizing: border-box;
+  font-family: "Baskervville", serif;
+  margin-bottom: 10px;
+}
+
+.card-produto1{
+  background-color: #ffffff;
+  width: 330px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 50px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-produto1 h1{
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000000;
+  font-weight: normal;
+}
+
+.card-produto1 h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #535353;
+  opacity: 0.3;
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-produto1 p{
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-produto1 img{
+  width: 75%;
+  height: 55%;
+  justify-content: center;
+}
+
+.card-produto1 button{
+  font-family: "Baskervville", serif;
+  background-color: #3B63B8;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color:#ffffff;
+  margin-top: 15px;
+  margin-bottom: 20px; 
+  font-size: 1.2rem;
+}
+
+.card-produto1 i{
+  margin: 2px;
+}
+
+.card-produto4 {
+  background-color: #ffffff;
+  width: 330px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 50px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-produto4 h1{
+  font-family: "Baskervville", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000000;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.card-produto4 h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #535353;
+  opacity: 0.3;
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-produto4 p{
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.card-produto4 img{
+  width: 75%;
+  /* height: 55%; */
+  justify-content: center;
+}
+
+.card-produto4 button{
+  font-family: "Baskervville", serif;
+  background-color: #3B63B8;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  color:#ffffff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.card-produto4 i{
+  margin: 2px;
+}
+
+.secao-avaliacoes{
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+  padding: 20px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.avaliacoes {
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+
+.container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.coluna-nota {
+  flex: 1;
+  min-width: 300px;
+}
+
+.nota-geral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nota-numero {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.estrelas i {
+  color: #facc15;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.barras {
+  margin-top: 30px;
+}
+
+.barra-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.barra-item span {
+  width: 40px;
+  font-size: 1.1rem;
+}
+
+.barra {
+  background-color: white;
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.preenchida {
+  background-color: black;
+  height: 100%;
+  width: 0%;
+}
+
+.barra-5 { width: 90%; }
+.barra-4 { width: 75%; }
+.barra-3 { width: 35%; }
+.barra-2 { width: 20%; }
+.barra-1 { width: 10%; }
+
+.coluna-comentarios {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.comentario {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.topo1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.texto {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.observacao {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+footer p{ 
   text-align: center;
 }
