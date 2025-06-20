@@ -573,6 +573,7 @@ span{
   opacity: 0.3;
   margin: 0;
   font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .card-produto1 p{
@@ -631,6 +632,7 @@ span{
   opacity: 0.3;
   margin: 0;
   font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .card-produto4 p{
@@ -679,7 +681,7 @@ span{
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
   margin-bottom: 40px;
@@ -703,18 +705,25 @@ span{
 }
 
 .nota-numero {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: bold;
+  margin: 10px;
+  margin-left: 25px;
 }
 
 .estrelas i {
   color: #facc15;
 }
 
+/* .i{
+  color: #facc15;
+} */
+
 .subtitulo {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-top: 5px;
+  margin-left: 80px
 }
 
 .barras {
@@ -725,7 +734,7 @@ span{
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 8px 0;
+  margin: 40px 0;
 }
 
 .barra-item span {
@@ -766,6 +775,7 @@ span{
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  /* opacity: 0.5; */
 }
 
 .topo1 {
@@ -777,18 +787,21 @@ span{
 
 .nome {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: #000000;
 }
 
 .texto {
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.5;
+  font-family: "Baskervville", serif;
 }
 
 .observacao {
   margin-top: 30px;
-  font-size: 0.85rem;
+  font-size: 1.0rem;
   font-weight: bold;
 }
 
