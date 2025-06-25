@@ -202,6 +202,8 @@ span{
   width: 75%;
   height: 55%;
   justify-content: center;
+  padding-left: 35px;
+  padding-right: 30px;
 }
 
 .paragrafo-card1{
@@ -242,6 +244,8 @@ span{
   width: 75%;
   height: 55%;
   align-items: center;
+  padding-left: 35px;
+  padding-right: 30px;
 }
 
 .secao-categorias{
@@ -676,7 +680,8 @@ span{
 }
 
 
-.avaliacoes {
+.secao-avaliacoes {
+  width: 100%;
   padding: 40px 20px;
 }
 
@@ -776,6 +781,7 @@ span{
   padding: 20px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.05);
   /* opacity: 0.5; */
+  margin-left: 40px;
 }
 
 .topo1 {
@@ -803,8 +809,184 @@ span{
   margin-top: 30px;
   font-size: 1.0rem;
   font-weight: bold;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0px;
 }
 
-footer p{ 
+.secao-inscricao{
+  width: 100%;
+  background-image: url("../img/sala.jpg");
+  /* height: 400px; */
+  align-items: center;
   text-align: center;
+  justify-content: center; 
+  /* display: flex;  */
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: relative;
+  opacity: 0.9;
+}
+
+.secao-inscricao h1{
+  font-size: 2.9rem;
+  font-weight: 800;
+  text-align: center;
+  /* margin-top: 0px; */
+  padding-top: 85px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+.mensagem p{
+  font-family: "Baskervville", serif;
+  font-size: 2.0rem;
+  margin-top: 250px;
+  text-align: center;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35); 
+}
+
+.secao-inscricao input{
+  border-radius: 22px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 90px;
+  width: 550px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Baskervville", serif;
+  opacity: 0.5;
+  font-weigth: bold;
+  margin-top: 80px;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+.secao-inscricao button{
+  justify-content: center;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-family: "Baskervville", serif;
+  height: 80px;
+  width: 400px;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #535353;
+  color: #ffffff;
+  font-weight: 100;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+
+.observacao1{
+  font-family: "Baskervville", serif;
+  align-items: center;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.35);
+  font-size: 1.6rem;
+  padding: 60px;
+  /* padding-bottom: 50px; */
+  font-weight: 800;
+  margin: 0;
+}
+
+.footer{
+  width: 100%;
+  background-color: #081459;
+  margin: 0px;
+  /* height: 400px; */
+  padding: 30px;
+}
+
+.footer p{ 
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+  padding: 20px;
+  align-items: center;
+  /* position: absolute; */
+  /* bottom: 0px; */
+} 
+
+.footer {
+  background-color: #001a5f; /* Azul escuro */
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffc107; /* Amarelinho no hover */
+}
+
+.footer-social a {
+  color: white;
+  font-size: 20px;
+  margin-right: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+  color: #ffc107;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 30px;
+  border-top: 1px solid #ffffff30;
+  padding-top: 15px;
+  color: #ffffffaa;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social a {
+    margin: 0 10px;
+  }
 }
