@@ -112,18 +112,23 @@ span{
 .menu {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* sombra leve para contraste */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
   text-align: center;
   display: flex;
-  gap: 1rem;
+  gap: 40px;
   align-items: center;
 }
 
 .menu a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 550;
   transition: 0.2s ease-in-out;
+  background-color: #ceddef;
+  padding: 0;
+  gap: 5px;
+  font-family: "Poppins", sans-serif; 
 }
 
  .secao-ofertas{
@@ -219,6 +224,7 @@ span{
   border: none;
   border-radius: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .segundo-card{
@@ -238,6 +244,7 @@ span{
   border-radius: 20px;
   text-align: center;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .segundo-card img{
@@ -289,6 +296,7 @@ span{
   display: flex;
   gap: 110px;
   justify-content: center;
+  cursor: pointer;
 }
 
 .card-sala{
@@ -405,6 +413,7 @@ span{
   gap: 110px;
   justify-content: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .moveis h2{
@@ -603,6 +612,7 @@ span{
   margin-top: 15px;
   margin-bottom: 20px; 
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .card-produto1 i{
@@ -662,6 +672,7 @@ span{
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .card-produto4 i{
@@ -695,7 +706,7 @@ span{
 .container-principal {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 280px;
 }
 
 .coluna-nota {
@@ -771,7 +782,7 @@ span{
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 70px;
   min-width: 300px;
 }
 
@@ -854,7 +865,7 @@ span{
   font-size: 1.4rem;
   font-family: "Baskervville", serif;
   opacity: 0.5;
-  font-weigth: bold;
+  font-weight: bold;
   margin-top: 80px;
   border: none;
   box-shadow: 0 1px 5px rgba(0,0,0,0.4);
@@ -873,6 +884,7 @@ span{
   color: #ffffff;
   font-weight: 100;
   box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+  cursor: pointer;
 }
 
 .observacao1{
@@ -902,6 +914,7 @@ span{
   align-items: center;
   /* position: absolute; */
   /* bottom: 0px; */
+  padding-bottom: 0;
 } 
 
 .footer {
@@ -916,6 +929,7 @@ span{
   color: #ffffff;
   font-weight: 500;
   transition: 0.2s ease-in-out;
+  font-family: "Baskervville", serif;
 }
 
 .footer-container {
@@ -925,6 +939,7 @@ span{
   max-width: 1200px;
   margin: auto;
   gap: 30px;
+  list-style: none;
 }
 
 .footer-column {
@@ -939,13 +954,16 @@ span{
 }
 
 .footer-column ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer-column ul li {
   margin-bottom: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-column ul li a {
@@ -977,6 +995,12 @@ span{
   border-top: 1px solid #ffffff30;
   padding-top: 15px;
   color: #ffffffaa;
+}
+
+.footer-col{
+  /* width: 40%; */
+  height: 30%;
+  /* align-items: center; */
 }
 
 /* Responsivo */
